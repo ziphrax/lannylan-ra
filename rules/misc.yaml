@@ -1,0 +1,425 @@
+MINP:
+	HiddenUnderShroud:
+		Type: CenterPosition
+	Mine:
+		CrushClasses: mine
+		DetonateClasses: mine
+		AvoidFriendly: false
+	Explodes:
+		Weapon: APMine
+	Health:
+		HP: 100
+		NotifyAppliedDamage: false
+	Armor:
+		Type: Light
+	RenderSimple:
+	Cloak:
+		CloakSound:
+		UncloakSound:
+		Palette:
+		CloakTypes: Mine
+	Tooltip:
+		Name: Mine
+	ProximityCaptor:
+		Types: Mine
+	TargetableUnit:
+		TargetTypes: Ground
+	BodyOrientation:
+	Immobile:
+		OccupiesSpace: true
+
+MINV:
+	HiddenUnderShroud:
+		Type: CenterPosition
+	Mine:
+		CrushClasses: mine
+		DetonateClasses: mine
+		AvoidFriendly: false
+	Explodes:
+		Weapon: ATMine
+	Health:
+		HP: 100
+		NotifyAppliedDamage: false
+	Armor:
+		Type: Light
+	RenderSimple:
+	Cloak:
+		CloakSound:
+		UncloakSound:
+		Palette:
+		CloakTypes: Mine
+	Tooltip:
+		Name: Mine
+	ProximityCaptor:
+		Types: Mine
+	TargetableUnit:
+		TargetTypes: Ground
+	BodyOrientation:
+	Immobile:
+		OccupiesSpace: true
+
+CRATE:
+	Inherits: ^Crate
+	GiveCashCrateAction:
+		Amount: 1000
+		SelectionShares: 50
+		UseCashTick: true
+	LevelUpCrateAction:
+		SelectionShares: 40
+	ExplodeCrateAction@fire:
+		Weapon: CrateNapalm
+		SelectionShares: 5
+	ExplodeCrateAction@boom:
+		Weapon: CrateExplosion
+		SelectionShares: 5
+	HideMapCrateAction:
+		SelectionShares: 5
+		Effect: hide-map
+	HealUnitsCrateAction:
+		Notification: heal2.aud
+		SelectionShares: 2
+		Effect: heal
+	RevealMapCrateAction:
+		SelectionShares: 1
+		Effect: reveal-map
+	DuplicateUnitCrateAction:
+		SelectionShares: 10
+		MaxAmount: 5
+		MinAmount: 1
+		MaxDuplicateValue: 1500
+	GiveMcvCrateAction:
+		SelectionShares: 2
+		NoBaseSelectionShares: 100
+		Units: mcv
+	GiveUnitCrateAction@jeep:
+		SelectionShares: 7
+		Units: jeep
+		ValidRaces: allies, monkeys, terror, dronearmy
+		Prerequisites: techlevel.low
+	GiveUnitCrateAction@arty:
+		SelectionShares: 6
+		Units: arty
+		ValidRaces: allies, monkeys, terror, dronearmy
+		Prerequisites: techlevel.medium, dome
+	GiveUnitCrateAction@v2rl:
+		SelectionShares: 6
+		Units: v2rl
+		ValidRaces: soviet, deathwatch, wankers
+		Prerequisites: techlevel.medium, dome
+	GiveUnitCrateAction@1tnk:
+		SelectionShares: 5
+		Units: 1tnk
+		ValidRaces: allies, monkeys, terror, dronearmy
+		Prerequisites: techlevel.low
+	GiveUnitCrateAction@2tnk:
+		SelectionShares: 4
+		Units: 2tnk
+		ValidRaces: allies, monkeys, terror, dronearmy
+		Prerequisites: techlevel.medium, fix
+	GiveUnitCrateAction@3tnk:
+		SelectionShares: 4
+		Units: 3tnk
+		ValidRaces: soviet, deathwatch, wankers
+		Prerequisites: techlevel.medium, fix
+	GiveUnitCrateAction@4tnk:
+		SelectionShares: 3
+		Units: 4tnk
+		ValidRaces: soviet, deathwatch, wankers
+		Prerequisites: techlevel.unrestricted, fix, techcenter
+	GiveUnitCrateAction@squadlight:
+		SelectionShares: 7
+		Units: e1,e1,e1,e3,e3
+		ValidRaces: allies, monkeys, terror, dronearmy, soviet, deathwatch, wankers
+	GiveUnitCrateAction@squadheavyallies:
+		SelectionShares: 7
+		Units: e1,e1,e1,e1,e3,e3,e3,e6,medi
+		ValidRaces: allies, monkeys, terror, dronearmy
+		TimeDelay: 4500
+	GiveUnitCrateAction@squadheavysoviet:
+		SelectionShares: 7
+		Units: e1,e1,e4,e4,e3,e3,e3
+		ValidRaces: soviet, deathwatch, wankers
+		TimeDelay: 4500
+	GrantUpgradeCrateAction@invuln:
+		SelectionShares: 5
+		Effect: invuln
+		Notification: ironcur9.aud
+		Upgrades: invulnerability
+		Duration: 600
+
+MONEYCRATE:
+	Inherits: ^Crate
+	Tooltip:
+		Name: Money Crate
+	GiveCashCrateAction:
+		Amount: 500
+		SelectionShares: 1
+		UseCashTick: true
+	RenderSprites:
+		Image: wcrate
+
+HEALCRATE:
+	Inherits: ^Crate
+	Tooltip:
+		Name: Heal Crate
+	HealUnitsCrateAction:
+		Notification: heal2.aud
+		SelectionShares: 1
+		Effect: heal
+
+CAMERA:
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	Health:
+		HP: 1000
+	RevealsShroud:
+		Range: 10c0
+		Type: CenterPosition
+	ProximityCaptor:
+		Types: Camera
+	BodyOrientation:
+	DetectCloaked:
+		Range: 10
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+		Image: camera
+
+camera.paradrop:
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	Health:
+		HP: 1000
+	RevealsShroud:
+		Range: 6c0
+		Type: CenterPosition
+	ProximityCaptor:
+		Types: Camera
+	BodyOrientation:
+
+SONAR:
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	Health:
+		HP: 1000
+	RevealsShroud:
+		Range: 10c0
+		Type: CenterPosition
+	ProximityCaptor:
+		Types: Sonar
+	BodyOrientation:
+	DetectCloaked:
+		Range: 10
+		CloakTypes: Underwater
+
+FLARE:
+	Immobile:
+		OccupiesSpace: false
+	RevealsShroud:
+		Range: 3c0
+		Type: CenterPosition
+	RenderSprites:
+		Image: smokland
+	WithSpriteBody:
+		StartSequence: open
+	HiddenUnderFog:
+		Type: CenterPosition
+	Tooltip:
+		Name: Flare
+		ShowOwnerRow: false
+	BodyOrientation:
+
+MINE:
+	HiddenUnderShroud:
+	Tooltip:
+		Name: Ore Mine
+	RenderSprites:
+		Palette: terrain
+	WithSpriteBody:
+	AutoSelectionSize:
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	AppearsOnRadar:
+	RadarColorFromTerrain:
+		Terrain: Ore
+	AutoTargetIgnore:
+	BodyOrientation:
+	SeedsResource:
+
+GMINE:
+	HiddenUnderShroud:
+	Tooltip:
+		Name: Gem Mine
+	RenderSprites:
+		Palette: player
+	WithSpriteBody:
+	AutoSelectionSize:
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	AppearsOnRadar:
+	RadarColorFromTerrain:
+		Terrain: Gems
+	AutoTargetIgnore:
+	BodyOrientation:
+	SeedsResource:
+		ResourceType: Gems
+
+RAILMINE:
+	HiddenUnderShroud:
+	Tooltip:
+		Name: Abandoned Mine
+	RenderSprites:
+		Palette: player
+	WithSpriteBody:
+	AutoSelectionSize:
+	Building:
+		Footprint: xx
+		Dimensions: 2,1
+	AutoTargetIgnore:
+	BodyOrientation:
+	EditorTilesetFilter:
+		ExcludeTilesets: INTERIOR
+
+QUEE:
+	HiddenUnderShroud:
+	Tooltip:
+		Name: Queen Ant
+	Building:
+		Footprint: xx
+		Dimensions: 2,1
+	RenderSprites:
+	WithSpriteBody:
+	AutoSelectionSize:
+	AppearsOnRadar:
+	BodyOrientation:
+	EditorTilesetFilter:
+		RequireTilesets: INTERIOR
+
+LAR1:
+	HiddenUnderShroud:
+	Tooltip:
+		Name: Ant Larva
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	RenderSprites:
+		Palette: terrain
+	WithSpriteBody:
+	AutoSelectionSize:
+	AppearsOnRadar:
+	BodyOrientation:
+	EditorTilesetFilter:
+		RequireTilesets: INTERIOR
+
+LAR2:
+	HiddenUnderShroud:
+	Tooltip:
+		Name: Ant Larvae
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	RenderSprites:
+		Palette: terrain
+	WithSpriteBody:
+	AutoSelectionSize:
+	AppearsOnRadar:
+	BodyOrientation:
+	EditorTilesetFilter:
+		RequireTilesets: INTERIOR
+
+powerproxy.parabombs:
+	AlwaysVisible:
+	AirstrikePower:
+		Icon: parabombs
+		Description: Parabombs (Single Use)
+		LongDesc: A Badger drops a load of parachuted\nbombs on your target.
+		OneShot: true
+		AllowMultiple: true
+		UnitType: badr.bomber
+		SelectTargetSound: slcttgt1.aud
+		QuantizedFacings: 8
+		DisplayBeacon: True
+		BeaconPoster: pbmbicon
+		CameraActor: camera
+
+powerproxy.sonarpulse:
+	AlwaysVisible:
+	SpawnActorPower:
+		Icon: sonar
+		Description: Sonar Pulse
+		LongDesc: Reveals all submarines in the vicinity for a \nshort time.
+		ChargeTime: 30
+		EndChargeSound: pulse1.aud
+		SelectTargetSound: slcttgt1.aud
+		Actor: sonar
+		LifeTime: 250
+		DeploySound: sonpulse.aud
+		EffectSequence: moveflsh
+		EffectPalette: moveflash
+
+powerproxy.paratroopers:
+	AlwaysVisible:
+	ParatroopersPower:
+		Icon: paratroopers
+		Description: Paratroopers
+		LongDesc: A Badger drops a squad of infantry\nanywhere on the map.
+		DropItems: E1,E1,E1,E3,E3
+		SelectTargetSound: slcttgt1.aud
+		AllowImpassableCells: false
+		QuantizedFacings: 8
+		CameraActor: camera.paradrop
+		DisplayBeacon: true
+		BeaconPoster: pinficon
+
+barracks.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+
+vehicles.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+
+aircraft.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+
+mpspawn:
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+	BodyOrientation:
+
+waypoint:
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+	BodyOrientation:
+
+^fact.colorpicker:
+	Inherits: FACT
+	RenderBuilding:
+		Image: fact
+		Palette: colorpicker
+
+CTFLAG:
+	Inherits: ^TechBuilding
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	Tooltip:
+		Name: Flag
+	Bib:
+		HasMinibib: Yes
+	DamageMultiplier@INVULNERABLE:
+		Modifier: 0
+	-Selectable:
+	-TargetableBuilding:
+
