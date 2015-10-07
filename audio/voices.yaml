@@ -5,8 +5,8 @@ GenericVoice:
 		terror: .v01,.v03
 		dronearmy: .v01,.v03
 		soviet: .r01,.r03
-		deathwatch: .r01,.r03
-		wankers: .r01,.r03
+		zombies: .r01,.r03
+		ants: .r01,.r03
 	Voices:
 		Select: await1,ready,report1,yessir1
 		Action: ackno,affirm1,noprob,overout,ritaway,roger,ugotit
@@ -22,8 +22,8 @@ VehicleVoice:
 		terror: .v00,.v02
 		dronearmy: .v00,.v02
 		soviet: .r00,.r02
-		deathwatch: .r00,.r02
-		wankers: .r00,.r02
+		zombies: .r00,.r02
+		ants: .r00,.r02
 	Voices:
 		Select: vehic1,yessir1,report1,await1
 		Action: ackno,affirm1

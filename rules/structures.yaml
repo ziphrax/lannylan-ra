@@ -141,29 +141,29 @@ SPEN:
 	Power:
 		Amount: -30
 	ProvidesPrerequisite@soviet:
-		Factions: soviet, deathwatch, wankers
+		Factions: soviet, zombies, ants
 		Prerequisite: ships.soviet
 	ProvidesPrerequisite@sovietvanilla:
 		Factions: soviet
 		Prerequisite: ships.sovietvanilla
-	ProvidesPrerequisite@deathwatch:
-		Factions: deathwatch
-		Prerequisite: ships.deathwatch
-	ProvidesPrerequisite@wankers:
-		Factions: wankers
-		Prerequisite: ships.wankers
+	ProvidesPrerequisite@zombies:
+		Factions: zombies
+		Prerequisite: ships.zombies
+	ProvidesPrerequisite@ants:
+		Factions: ants
+		Prerequisite: ships.ants
 	ProvidesPrerequisite@sovietstructure:
 		RequiresPrerequisites: structures.soviet
 		Prerequisite: ships.soviet
 	ProvidesPrerequisite@sovietvanillastructure:
 		RequiresPrerequisites: structures.sovietvanilla
 		Prerequisite: ships.sovietvanilla
-	ProvidesPrerequisite@deathwatchnstructure:
-		RequiresPrerequisites: structures.deathwatch
-		Prerequisite: ships.deathwatch
+	ProvidesPrerequisite@zombiesnstructure:
+		RequiresPrerequisites: structures.zombies
+		Prerequisite: ships.zombies
 	ProvidesPrerequisite@ukrainianstructure:
-		RequiresPrerequisites: structures.wankers
-		Prerequisite: ships.wankers
+		RequiresPrerequisites: structures.ants
+		Prerequisite: ships.ants
 	ProvidesPrerequisite@buildingname:
 	EditorTilesetFilter:
 		ExcludeTilesets: INTERIOR
@@ -812,17 +812,17 @@ WEAP:
 		Factions: dronearmy
 		Prerequisite: vehicles.dronearmy
 	ProvidesPrerequisite@soviet:
-		Factions: soviet, deathwatch, wankers
+		Factions: soviet, zombies, ants
 		Prerequisite: vehicles.soviet
 	ProvidesPrerequisite@sovietvanilla:
 		Factions: soviet
 		Prerequisite: vehicles.sovietvanilla
-	ProvidesPrerequisite@deathwatch:
-		Factions: deathwatch
-		Prerequisite: vehicles.deathwatch
-	ProvidesPrerequisite@wankers:
-		Factions: wankers
-		Prerequisite: vehicles.wankers
+	ProvidesPrerequisite@zombies:
+		Factions: zombies
+		Prerequisite: vehicles.zombies
+	ProvidesPrerequisite@ants:
+		Factions: ants
+		Prerequisite: vehicles.ants
 	ProvidesPrerequisite@alliedstructure:
 		RequiresPrerequisites: structures.allies
 		Prerequisite: vehicles.allies
@@ -844,12 +844,12 @@ WEAP:
 	ProvidesPrerequisite@sovietvanillastructure:
 		RequiresPrerequisites: structures.sovietvanilla
 		Prerequisite: vehicles.sovietvanilla
-	ProvidesPrerequisite@deathwatchnstructure:
-		RequiresPrerequisites: structures.deathwatch
-		Prerequisite: vehicles.deathwatch
+	ProvidesPrerequisite@zombiesnstructure:
+		RequiresPrerequisites: structures.zombies
+		Prerequisite: vehicles.zombies
 	ProvidesPrerequisite@ukrainianstructure:
-		RequiresPrerequisites: structures.wankers
-		Prerequisite: vehicles.wankers
+		RequiresPrerequisites: structures.ants
+		Prerequisite: vehicles.ants
 	PrimaryBuilding:
 	ProductionBar:
 	Power:
@@ -885,17 +885,17 @@ FACT:
 		Factions: dronearmy
 		Prerequisite: structures.dronearmy
 	ProvidesPrerequisite@soviet:
-		Factions: soviet, deathwatch, wankers
+		Factions: soviet, zombies, ants
 		Prerequisite: structures.soviet
 	ProvidesPrerequisite@sovietvanilla:
 		Factions: soviet
 		Prerequisite: structures.sovietvanilla
-	ProvidesPrerequisite@deathwatch:
-		Factions: deathwatch
-		Prerequisite: structures.deathwatch
-	ProvidesPrerequisite@wankers:
-		Factions: wankers
-		Prerequisite: structures.wankers
+	ProvidesPrerequisite@zombies:
+		Factions: zombies
+		Prerequisite: structures.zombies
+	ProvidesPrerequisite@ants:
+		Factions: ants
+		Prerequisite: structures.ants
 	Health:
 		HP: 1500
 	Armor:
@@ -1118,29 +1118,29 @@ AFLD:
 		Produces: Aircraft, Plane
 	Reservable:
 	ProvidesPrerequisite@soviet:
-		Factions: soviet, deathwatch, wankers
+		Factions: soviet, zombies, ants
 		Prerequisite: aircraft.soviet
 	ProvidesPrerequisite@sovietvanilla:
 		Factions: soviet
 		Prerequisite: aircraft.sovietvanilla
-	ProvidesPrerequisite@deathwatch:
-		Factions: deathwatch
-		Prerequisite: aircraft.deathwatch
-	ProvidesPrerequisite@wankers:
-		Factions: wankers
-		Prerequisite: aircraft.wankers
+	ProvidesPrerequisite@zombies:
+		Factions: zombies
+		Prerequisite: aircraft.zombies
+	ProvidesPrerequisite@ants:
+		Factions: ants
+		Prerequisite: aircraft.ants
 	ProvidesPrerequisite@sovietstructure:
 		RequiresPrerequisites: structures.soviet
 		Prerequisite: aircraft.soviet
 	ProvidesPrerequisite@sovietvanillastructure:
 		RequiresPrerequisites: structures.sovietvanilla
 		Prerequisite: aircraft.sovietvanilla
-	ProvidesPrerequisite@deathwatchnstructure:
-		RequiresPrerequisites: structures.deathwatch
-		Prerequisite: aircraft.deathwatch
+	ProvidesPrerequisite@zombiesnstructure:
+		RequiresPrerequisites: structures.zombies
+		Prerequisite: aircraft.zombies
 	ProvidesPrerequisite@ukrainianstructure:
-		RequiresPrerequisites: structures.wankers
-		Prerequisite: aircraft.wankers
+		RequiresPrerequisites: structures.ants
+		Prerequisite: aircraft.ants
 	AirstrikePower@spyplane:
 		OrderName: SovietSpyPlane
 		Prerequisites: aircraft.soviet
@@ -1171,8 +1171,8 @@ AFLD:
 		DisplayBeacon: true
 		BeaconPoster: pinficon
 	AirstrikePower@parabombs:
-		OrderName: WankersParabombs
-		Prerequisites: aircraft.wankers
+		OrderName: AntsParabombs
+		Prerequisites: aircraft.ants
 		Icon: parabombs
 		ChargeTime: 360
 		Description: Parabombs
@@ -1337,29 +1337,29 @@ BARR:
 	ProvidesPrerequisite:
 		Prerequisite: barracks
 	ProvidesPrerequisite@soviet:
-		Factions: soviet, deathwatch, wankers
+		Factions: soviet, zombies, ants
 		Prerequisite: infantry.soviet
 	ProvidesPrerequisite@sovietvanilla:
 		Factions: soviet
 		Prerequisite: infantry.sovietvanilla
-	ProvidesPrerequisite@deathwatch:
-		Factions: deathwatch
-		Prerequisite: infantry.deathwatch
-	ProvidesPrerequisite@wankers:
-		Factions: wankers
-		Prerequisite: infantry.wankers
+	ProvidesPrerequisite@zombies:
+		Factions: zombies
+		Prerequisite: infantry.zombies
+	ProvidesPrerequisite@ants:
+		Factions: ants
+		Prerequisite: infantry.ants
 	ProvidesPrerequisite@sovietstructure:
 		RequiresPrerequisites: structures.soviet
 		Prerequisite: infantry.soviet
 	ProvidesPrerequisite@sovietvanillastructure:
 		RequiresPrerequisites: structures.sovietvanilla
 		Prerequisite: infantry.sovietvanilla
-	ProvidesPrerequisite@deathwatchnstructure:
-		RequiresPrerequisites: structures.deathwatch
-		Prerequisite: infantry.deathwatch
+	ProvidesPrerequisite@zombiesnstructure:
+		RequiresPrerequisites: structures.zombies
+		Prerequisite: infantry.zombies
 	ProvidesPrerequisite@ukrainianstructure:
-		RequiresPrerequisites: structures.wankers
-		Prerequisite: infantry.wankers
+		RequiresPrerequisites: structures.ants
+		Prerequisite: infantry.ants
 	Power:
 		Amount: -20
 	ProvidesPrerequisite@buildingname:

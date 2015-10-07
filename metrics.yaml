@@ -30,8 +30,8 @@ Metrics:
 	FactionSuffix-terror: allies
 	FactionSuffix-dronearmy: allies
 	FactionSuffix-soviet: soviet
-	FactionSuffix-deathwatch: soviet
-	FactionSuffix-wankers: soviet
+	FactionSuffix-zombies: soviet
+	FactionSuffix-ants: soviet
 	IncompatibleGameColor: 169,169,169
 	CantJoinGameColor: 211,211,211
 	ProtectedGameColor: 255,0,0

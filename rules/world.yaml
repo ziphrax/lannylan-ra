@@ -38,15 +38,15 @@
 		Side: Soviet
 		Selectable: False
 	Faction@5:
-		Name: Deathwatch
-		InternalName: deathwatch
+		Name: Zombies
+		InternalName: zombies
 		Side: Soviet
-		Description: Deathwatch: Tesla Weapons\nSpecial Unit: Tesla Tank\nSpecial Unit: Shock Trooper
+		Description: Zombies: Tesla Weapons\nSpecial Unit: Tesla Tank\nSpecial Unit: Shock Trooper
 	Faction@6:
-		Name: Wankers
-		InternalName: wankers
+		Name: Ants
+		InternalName: ants
 		Side: Soviet
-		Description: Wankers: Demolitions\nSpecial Ability: Parabombs\nSpecial Unit: Demolition Truck
+		Description: Ants: Demolitions\nSpecial Ability: Parabombs\nSpecial Unit: Demolition Truck
 	Faction@random:
 		Name: Any
 		InternalName: Random
@@ -62,7 +62,7 @@
 	Faction@randomsoviet:
 		Name: Soviet
 		InternalName: RandomSoviet
-		RandomFactionMembers: deathwatch, wankers
+		RandomFactionMembers: zombies, ants
 		Side: Random
 		Description: A random Soviet country.
 	ResourceType@ore:
@@ -123,7 +123,7 @@ World:
 	MPStartUnits@mcvonly:
 		Class: none
 		ClassName: MCV Only
-		Races: allies, monkeys, terror, dronearmy, soviet, deathwatch, wankers
+		Races: allies, monkeys, terror, dronearmy, soviet, zombies, ants
 		BaseActor: mcv
 	MPStartUnits@lightallies:
 		Class: light
@@ -136,7 +136,7 @@ World:
 	MPStartUnits@lightsoviet:
 		Class: light
 		ClassName: Light Support
-		Races: soviet, deathwatch, wankers
+		Races: soviet, zombies, ants
 		BaseActor: mcv
 		SupportActors: e1,e1,e1,e3,e3,apc,ftrk
 		InnerSupportRadius: 3
@@ -152,7 +152,7 @@ World:
 	MPStartUnits@heavysoviet:
 		Class: heavy
 		ClassName: Heavy Support
-		Races: soviet, deathwatch, wankers
+		Races: soviet, zombies, ants
 		BaseActor: mcv
 		SupportActors: e1,e1,e1,e3,e3,apc,ftrk,3tnk,3tnk
 		InnerSupportRadius: 3

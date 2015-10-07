@@ -104,7 +104,7 @@ CRATE:
 	GiveUnitCrateAction@v2rl:
 		SelectionShares: 6
 		Units: v2rl
-		ValidRaces: soviet, deathwatch, wankers
+		ValidRaces: soviet, zombies, ants
 		Prerequisites: techlevel.medium, dome
 	GiveUnitCrateAction@1tnk:
 		SelectionShares: 5
@@ -119,17 +119,17 @@ CRATE:
 	GiveUnitCrateAction@3tnk:
 		SelectionShares: 4
 		Units: 3tnk
-		ValidRaces: soviet, deathwatch, wankers
+		ValidRaces: soviet, zombies, ants
 		Prerequisites: techlevel.medium, fix
 	GiveUnitCrateAction@4tnk:
 		SelectionShares: 3
 		Units: 4tnk
-		ValidRaces: soviet, deathwatch, wankers
+		ValidRaces: soviet, zombies, ants
 		Prerequisites: techlevel.unrestricted, fix, techcenter
 	GiveUnitCrateAction@squadlight:
 		SelectionShares: 7
 		Units: e1,e1,e1,e3,e3
-		ValidRaces: allies, monkeys, terror, dronearmy, soviet, deathwatch, wankers
+		ValidRaces: allies, monkeys, terror, dronearmy, soviet, zombies, ants
 	GiveUnitCrateAction@squadheavyallies:
 		SelectionShares: 7
 		Units: e1,e1,e1,e1,e3,e3,e3,e6,medi
@@ -138,7 +138,7 @@ CRATE:
 	GiveUnitCrateAction@squadheavysoviet:
 		SelectionShares: 7
 		Units: e1,e1,e4,e4,e3,e3,e3
-		ValidRaces: soviet, deathwatch, wankers
+		ValidRaces: soviet, zombies, ants
 		TimeDelay: 4500
 	GrantUpgradeCrateAction@invuln:
 		SelectionShares: 5
@@ -422,4 +422,3 @@ CTFLAG:
 		Modifier: 0
 	-Selectable:
 	-TargetableBuilding:
-

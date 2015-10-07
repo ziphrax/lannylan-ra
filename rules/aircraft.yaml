@@ -191,6 +191,66 @@ YAK:
 	ProducibleWithLevel:
 		Prerequisites: aircraft.upgraded
 
+FLY:
+	Inherits: ^Plane
+	Buildable:
+		Queue: Aircraft
+		BuildAtProductionType: Plane
+		BuildPaletteOrder: 30
+		Prerequisites: ~afld, ~techlevel.medium
+	Valued:
+		Cost: 1350
+	Tooltip:
+		Name: Yak Attack Plane
+		Description: Anti-Tanks & Anti-Infantry Plane.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+	Health:
+		HP: 60
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 10c0
+		Type: CenterPosition
+	Armament@PRIMARY:
+		Weapon: ChainGun.Yak
+		LocalOffset: 256,-213,0
+		MuzzleSequence: muzzle
+	Armament@SECONDARY:
+		Name: secondary
+		Weapon: ChainGun.Yak
+		LocalOffset: 256,213,0
+		MuzzleSequence: muzzle
+	AttackPlane:
+		FacingTolerance: 20
+	Plane:
+		CruiseAltitude: 2560
+		RearmBuildings: afld
+		InitialFacing: 192
+		ROT: 4
+		Speed: 178
+		RepulsionSpeed: 40
+		MaximumPitch: 56
+	AutoTarget:
+		TargetWhenIdle: false
+		TargetWhenDamaged: false
+		EnableStances: false
+	AmmoPool:
+		Ammo: 18
+		PipCount: 6
+		ReloadTicks: 11
+	ReturnOnIdle:
+	SelectionDecorations:
+		VisualBounds: 30,28,0,2
+	WithMuzzleFlash:
+	Contrail:
+		Offset: -853,0,0
+	LeavesHusk:
+		HuskActor: ANT.Husk
+	SmokeTrailWhenDamaged:
+		Offset: -853,0,0
+		Interval: 2
+	ProducibleWithLevel:
+		Prerequisites: aircraft.upgraded
+
 TRAN:
 	Inherits: ^Helicopter
 	Buildable:
@@ -358,4 +418,3 @@ U2:
 		Offset: -1c43,0,0
 		Interval: 2
 	RejectsOrders:
-

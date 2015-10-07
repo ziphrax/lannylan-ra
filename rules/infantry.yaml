@@ -457,7 +457,7 @@ SHOK:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 130
-		Prerequisites: ~barr, stek, tsla, ~infantry.deathwatch, ~techlevel.unrestricted
+		Prerequisites: ~barr, stek, tsla, ~infantry.zombies, ~techlevel.unrestricted
 	Valued:
 		Cost: 400
 	Tooltip:
@@ -541,7 +541,7 @@ Zombie:
 	Buildable:
 		Queue: Infantry
 		BuildPaletteOrder: 200
-		Prerequisites: ~barracks, ~techlevel.infonly
+		Prerequisites: ~barracks, ~techlevel.infonly, ~infantry.zombies
 	Health:
 		HP: 250
 	Mobile:
@@ -568,7 +568,7 @@ Ant:
 	Buildable:
 		Queue: Infantry
 		BuildPaletteOrder: 1954
-		Prerequisites: ~barracks, ~techlevel.infonly
+		Prerequisites: ~barracks, ~techlevel.infonly, ~infantry.ants
 	Selectable:
 		Bounds: 24,24,0,-5
 	SelectionDecorations:

@@ -545,7 +545,7 @@ TTNK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 180
-		Prerequisites: tsla, stek, ~vehicles.deathwatch, ~techlevel.unrestricted
+		Prerequisites: tsla, stek, ~vehicles.zombies, ~techlevel.unrestricted
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -614,7 +614,7 @@ DTRK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 170
-		Prerequisites: stek, ~vehicles.wankers, ~techlevel.unrestricted
+		Prerequisites: stek, ~vehicles.ants, ~techlevel.unrestricted
 	Valued:
 		Cost: 2500
 	Tooltip:
