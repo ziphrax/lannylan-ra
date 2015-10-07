@@ -1000,8 +1000,8 @@ PROCANTS:
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Ore Refinery
-		Description: Refines Ore and Gems\ninto credits.
+		Name: Ant Worker Hive
+		Description: Ant workers collect resources to build more ants
 	Building:
 		Footprint: _x_ xxx x==
 		Dimensions: 3,3
@@ -1155,8 +1155,8 @@ AFLD:
 	Valued:
 		Cost: 250
 	Tooltip:
-		Name: Airfield
-		Description: Produces and reloads aircraft.\n  Special Ability: Paratroopers\n  Special Ability: Spy Plane
+		Name: Flying Nest
+		Description: Produces flying ants
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
@@ -1189,9 +1189,9 @@ AFLD:
 		Prerequisites: aircraft.ants
 		Icon: paratroopers
 		ChargeTime: 150
-		Description: Paratroopers
-		LongDesc: A Badger drops a squad of infantry\nanywhere on the map.
-		DropItems: E1,E1,E1,E3,E3
+		Description: Ant Drop
+		LongDesc: A Badger drops a squad of ants\nanywhere on the map.
+		DropItems: ANT,ANT,ANT
 		SelectTargetSound: slcttgt1.aud
 		AllowImpassableCells: false
 		QuantizedFacings: 8
@@ -1339,8 +1339,8 @@ BARR:
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Soviet Barracks
-		Description: Trains infantry.
+		Name: Giant Ants Nest
+		Description: Grows giant ants
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2

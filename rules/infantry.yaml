@@ -4,7 +4,7 @@ E1:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 10
-		Prerequisites: ~barracks, ~techlevel.infonly
+		Prerequisites: ~barracks, ~techlevel.infonly, ~tent
 	Valued:
 		Cost: 100
 	Tooltip:
@@ -30,7 +30,7 @@ E2:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 20
-		Prerequisites: ~barr, ~techlevel.infonly
+		Prerequisites: ~barr, ~techlevel.infonly, ~barracks, ~tent
 	Valued:
 		Cost: 160
 	Tooltip:
@@ -63,7 +63,7 @@ E3:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 30
-		Prerequisites: ~barracks, ~techlevel.infonly
+		Prerequisites: ~barracks, ~techlevel.infonly, ~tent
 	Valued:
 		Cost: 300
 	Tooltip:
@@ -92,7 +92,7 @@ E4:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 70
-		Prerequisites: ~barr, ftur, ~techlevel.low
+		Prerequisites: ~barr, ftur, ~techlevel.low, ~barracks, ~tent
 	Valued:
 		Cost: 300
 	Tooltip:
@@ -119,7 +119,7 @@ E6:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 60
-		Prerequisites: ~barracks, ~techlevel.infonly
+		Prerequisites: ~barracks, ~techlevel.infonly, ~barracks, ~tent
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -202,7 +202,7 @@ E7:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 120
-		Prerequisites: ~tent, atek, ~techlevel.unrestricted
+		Prerequisites: ~tent, atek, ~techlevel.unrestricted, ~tent
 		BuildLimit: 1
 	Valued:
 		Cost: 1200
@@ -249,7 +249,7 @@ MEDI:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 40
-		Prerequisites: ~tent, ~techlevel.infonly
+		Prerequisites: ~tent, ~techlevel.infonly, ~barracks, ~tent
 	Valued:
 		Cost: 200
 	Tooltip:
@@ -280,7 +280,7 @@ MECH:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 100
-		Prerequisites: ~tent, fix, ~techlevel.medium
+		Prerequisites: ~tent, fix, ~techlevel.medium, ~barracks, ~tent
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -383,7 +383,7 @@ HIJACKER:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 110
-		Prerequisites: ~barr, fix, ~techlevel.medium
+		Prerequisites: ~barr, fix, ~techlevel.medium, ~barracks, ~tent
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -411,7 +411,7 @@ SHOK:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 130
-		Prerequisites: ~barr, stek, tsla, ~infantry.zombies, ~techlevel.unrestricted
+		Prerequisites: ~barr, stek, tsla, ~infantry.zombies, ~techlevel.unrestricted, ~barracks, ~tent
 	Valued:
 		Cost: 400
 	Tooltip:
@@ -522,7 +522,7 @@ Ant:
 	Buildable:
 		Queue: Infantry
 		BuildPaletteOrder: 1954
-		Prerequisites: 
+		Prerequisites:
 	Selectable:
 		Bounds: 24,24,0,-5
 	SelectionDecorations:
