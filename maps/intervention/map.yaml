@@ -2082,9 +2082,6 @@ Actors:
 	AirForceHQ: miss
 		Location: 77,32
 		Owner: Soviets
-	Kennel: kenn
-		Location: 64,61
-		Owner: Soviets
 	Harvester1: harv
 		Location: 73,96
 		Owner: Soviets

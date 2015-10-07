@@ -185,9 +185,6 @@ Actors:
 	Actor60: hpad
 		Location: 46,28
 		Owner: Soviets
-	Actor69: kenn
-		Location: 43,29
-		Owner: Soviets
 	Actor68: ftur
 		Location: 34,23
 		Owner: Soviets
@@ -448,9 +445,6 @@ Actors:
 	Actor105: brik
 		Location: 94,70
 		Owner: Allies
-	Actor170: kenn
-		Location: 104,41
-		Owner: Soviets
 	Actor162: e1
 		Location: 82,74
 		Owner: Allies

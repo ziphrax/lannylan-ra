@@ -166,10 +166,6 @@ Actors:
 		Location: 73,58
 		Owner: USSR
 		FreeActor: False
-	Actor34: kenn
-		Location: 64,65
-		Owner: USSR
-		Health: 99
 	Actor35: powr
 		Location: 65,57
 		Owner: USSR

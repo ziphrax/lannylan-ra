@@ -934,12 +934,6 @@ Actors:
 	Actor299: fix
 		Location: 61,90
 		Owner: USSR
-	Actor300: kenn
-		Location: 32,84
-		Owner: USSR
-	Actor301: kenn
-		Location: 48,82
-		Owner: USSR
 	Actor306: silo
 		Location: 57,90
 		Owner: USSR
@@ -1026,9 +1020,6 @@ Actors:
 		Owner: USSR
 	Actor339: barl
 		Location: 40,49
-		Owner: USSR
-	Actor340: kenn
-		Location: 26,94
 		Owner: USSR
 	Actor341: brl3
 		Location: 41,52

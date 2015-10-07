@@ -1481,9 +1481,6 @@ Actors:
 	Actor463: barr
 		Location: 66,76
 		Owner: USSR
-	Actor464: kenn
-		Location: 91,86
-		Owner: USSR
 	Actor465: tsla
 		Location: 78,73
 		Owner: USSR

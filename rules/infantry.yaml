@@ -1,49 +1,3 @@
-DOG:
-	Inherits: ^Soldier
-	Buildable:
-		Queue: Infantry
-		BuildAtProductionType: Dog
-		BuildPaletteOrder: 50
-		Prerequisites: ~kenn, ~techlevel.infonly
-	Valued:
-		Cost: 200
-	Tooltip:
-		Name: Attack Dog
-		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
-		GenericName: Dog
-	Selectable:
-		Bounds: 12,17,-1,-4
-	SelectionDecorations:
-		VisualBounds: 12,17,-1,-4
-	Health:
-		HP: 12
-	Mobile:
-		Speed: 99
-		Voice: Move
-	Guard:
-		Voice: Move
-	Passenger:
-		Voice: Move
-	RevealsShroud:
-		Range: 5c0
-	Armament:
-		Weapon: DogJaw
-	AttackLeap:
-		Voice: Attack
-	AttackMove:
-		Voice: Move
-	TargetableUnit:
-		TargetTypes: Ground, Infantry
-	WithInfantryBody:
-		AttackSequence: shoot
-		StandSequences: stand
-	IgnoresDisguise:
-	DetectCloaked:
-		Range: 5
-	Voiced:
-		VoiceSet: DogVoice
-	-TakeCover:
-
 E1:
 	Inherits: ^Soldier
 	Buildable:
@@ -568,7 +522,7 @@ Ant:
 	Buildable:
 		Queue: Infantry
 		BuildPaletteOrder: 1954
-		Prerequisites: ~barracks, ~techlevel.infonly, ~infantry.ants
+		Prerequisites: 
 	Selectable:
 		Bounds: 24,24,0,-5
 	SelectionDecorations:

@@ -92,10 +92,6 @@ InfantryProduction = function()
 
 	local toBuild = { Utils.Random(InfantryTypes) }
 
-	if SovietKennel.IsDead and toBuild == "dog" then
-		toBuild = "e1"
-	end
-
 	ussr.Build(toBuild, function(unit)
 		IdlingUnits[#IdlingUnits + 1] = unit[1]
 		Trigger.AfterDelay(InfantryDelay, InfantryProduction)

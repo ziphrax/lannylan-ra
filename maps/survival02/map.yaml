@@ -709,9 +709,6 @@ Actors:
 	Actor252: t01
 		Location: 24,43
 		Owner: Neutral
-	Actor253: kenn
-		Location: 12,6
-		Owner: Soviets
 	Actor254: fenc
 		Location: 10,5
 		Owner: Soviets

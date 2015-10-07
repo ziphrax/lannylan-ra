@@ -137,7 +137,7 @@ YAK:
 		Queue: Aircraft
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 30
-		Prerequisites: ~afld, ~techlevel.medium
+		Prerequisites: ~afld, ~techlevel.medium, ~vehicles.allies
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -197,14 +197,14 @@ FLY:
 		Queue: Aircraft
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 30
-		Prerequisites: ~afld, ~techlevel.medium
+		Prerequisites: ~afld
 	Valued:
-		Cost: 1350
+		Cost: 400
 	Tooltip:
-		Name: Yak Attack Plane
-		Description: Anti-Tanks & Anti-Infantry Plane.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+		Name: Flying Ant
+		Description: Everybody hates this flying buggers
 	Health:
-		HP: 60
+		HP: 100
 	Armor:
 		Type: Light
 	RevealsShroud:
@@ -243,8 +243,6 @@ FLY:
 	WithMuzzleFlash:
 	Contrail:
 		Offset: -853,0,0
-	LeavesHusk:
-		HuskActor: ANT.Husk
 	SmokeTrailWhenDamaged:
 		Offset: -853,0,0
 		Interval: 2
@@ -257,7 +255,7 @@ TRAN:
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 10
-		Prerequisites: ~hpad, ~techlevel.medium
+		Prerequisites: ~hpad, ~techlevel.medium,
 	Valued:
 		Cost: 900
 	Tooltip:

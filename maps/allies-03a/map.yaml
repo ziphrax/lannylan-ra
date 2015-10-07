@@ -1145,9 +1145,6 @@ Actors:
 	USSRWarFactory: weap
 		Location: 83,73
 		Owner: USSR
-	USSRKennel: kenn
-		Location: 81,77
-		Owner: USSR
 	USSRAdvancedPowerPlant: apwr
 		Location: 81,80
 		Owner: USSR
@@ -1515,9 +1512,6 @@ Rules:
 		Buildable:
 			Prerequisites: ~disabled
 	STEK:
-		Buildable:
-			Prerequisites: ~disabled
-	KENN:
 		Buildable:
 			Prerequisites: ~disabled
 	E3:

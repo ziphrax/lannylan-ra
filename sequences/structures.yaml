@@ -170,17 +170,6 @@ tent:
 	icon: tenticon
 		UseTilesetExtension: false
 
-kenn:
-	idle:
-	damaged-idle:
-		Start: 1
-	make: kennmake
-		Length: *
-	bib: mbSILO
-		Length: *
-		UseTilesetExtension: true
-	icon: kennicon
-
 dome:
 	idle:
 	damaged-idle:

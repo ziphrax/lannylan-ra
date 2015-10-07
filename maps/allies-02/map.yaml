@@ -581,10 +581,6 @@ Actors:
 	Actor170: fenc
 		Location: 50,51
 		Owner: USSR
-	SovietKennel: kenn
-		Location: 58,68
-		Owner: USSR
-		Health: 99
 	SovietBarracks: barr
 		Location: 56,66
 		Owner: USSR
