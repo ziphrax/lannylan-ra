@@ -120,10 +120,15 @@ World:
 	PathfinderDebugOverlay:
 	SpawnMapActors:
 	CreateMPPlayers:
+	MPStartUnits@mcvonlyants:
+		Class: none
+		ClassName: MCV Only
+		Races:  ants
+		BaseActor: MCVANTS
 	MPStartUnits@mcvonly:
 		Class: none
 		ClassName: MCV Only
-		Races: allies, monkeys, terror, dronearmy, soviet, zombies, ants
+		Races: allies, monkeys, terror, dronearmy, soviet, zombies
 		BaseActor: mcv
 	MPStartUnits@lightallies:
 		Class: light

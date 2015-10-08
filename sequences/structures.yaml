@@ -71,6 +71,28 @@ fact:
 	icon: facticon
 	fake-icon: facficon
 
+factant:
+	idle:
+	make: factant
+		Length: *
+	build:
+		Start: 0
+		Length: *
+	damaged-idle:
+		Start: 0
+	damaged-build:
+		Start: 0
+		Length: *
+	dead: factant
+		Tick: 800
+	bib: bib2
+		Length: *
+		UseTilesetExtension: true
+		TilesetOverrides:
+			INTERIOR: TEMPERAT
+	icon: facticon
+	fake-icon: facficon
+
 proc:
 	idle:
 		ZOffset: -1c511
@@ -84,6 +106,27 @@ proc:
 	make: procmake
 		Length: *
 	dead: procdead
+		Tick: 800
+	bib: bib2
+		Length: *
+		UseTilesetExtension: true
+		TilesetOverrides:
+			INTERIOR: TEMPERAT
+	icon: procicon
+
+procants:
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	idle-top: procants
+		ZOffset: 0
+	damaged-idle-top: procants
+		Start: 0
+		ZOffset: 0
+	make: procants
+		Length: *
+	dead: procants
 		Tick: 800
 	bib: bib2
 		Length: *

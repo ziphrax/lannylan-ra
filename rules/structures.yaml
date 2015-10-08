@@ -868,7 +868,7 @@ FACT:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 1000
-		Prerequisites: ~disabled
+		Prerequisite: allies
 	ProvidesPrerequisite@allies:
 		Factions: allies, monkeys, terror, dronearmy
 		Prerequisite: structures.allies
@@ -893,9 +893,6 @@ FACT:
 	ProvidesPrerequisite@zombies:
 		Factions: zombies
 		Prerequisite: structures.zombies
-	ProvidesPrerequisite@ants:
-		Factions: ants
-		Prerequisite: structures.ants
 	Health:
 		HP: 1500
 	Armor:
@@ -912,6 +909,62 @@ FACT:
 		Description: Produces structures.
 	CustomSellValue:
 		Value: 2500
+	BaseBuilding:
+	Transforms:
+		IntoActor: mcv
+		Offset: 1,1
+		Facing: 96
+	ProductionBar@Building:
+		ProductionType: Building
+	ProductionBar@Defense:
+		ProductionType: Defense
+		Color: 138,138,138
+	BaseProvider:
+		Range: 16
+	WithBuildingPlacedAnimation:
+	Power:
+		Amount: 0
+	WithDeathAnimation:
+		DeathSequence: dead
+		UseDeathTypeSuffix: false
+	WithBuildingExplosion:
+		Delay: 1
+	ProvidesPrerequisite@buildingname:
+
+FACTANT:
+	Inherits: ^Building
+	Building:
+		Footprint: xx xx ==
+		Dimensions: 2,3
+		Prerequisite: ~disabled
+	RenderBuilding:
+		image: FACTANT
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 1000
+		Prerequisites: ants
+	ProvidesPrerequisite@soviet:
+		Factions: soviet, zombies, ants
+		Prerequisite: structures.soviet
+	ProvidesPrerequisite@ants:
+		Factions: ants
+		Prerequisite: structures.ants
+	Health:
+		HP: 1500
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	Bib:
+	Production:
+		Produces: Building,Defense
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Ant Hive
+		Description: Produces ant structures.
+	CustomSellValue:
+		Value: 2000
 	BaseBuilding:
 	Transforms:
 		IntoActor: mcv
@@ -996,15 +1049,15 @@ PROCANTS:
 		BuildPaletteOrder: 60
 		Prerequisites:  ~techlevel.infonly, ~structures.ants
 	RenderBuilding:
-		Image: proc
+		Image: PROCANTS
 	Valued:
 		Cost: 400
 	Tooltip:
 		Name: Ant Worker Hive
 		Description: Ant workers collect resources to build more ants
 	Building:
-		Footprint: _x_ xxx x==
-		Dimensions: 3,3
+		Footprint: xx xx ==
+		Dimensions: 2,3
 	Selectable:
 		Bounds: 72,50,0,12
 	SelectionDecorations:

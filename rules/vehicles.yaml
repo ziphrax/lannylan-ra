@@ -316,6 +316,46 @@ MCV:
 	LeavesHusk:
 		HuskActor: MCV.Husk
 
+MCVANTS:
+	Inherits: ^Vehicle
+	RenderSprites:
+		Image: ANT
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 90
+		Prerequisites: fix, ~techlevel.medium, ants
+	CustomBuildTimeValue:
+		Value: 2000
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Ant Queen
+		Description: Deploys into Ant Hive
+	Selectable:
+		Priority: 4
+	SelectionDecorations:
+		VisualBounds: 42,42
+	Health:
+		HP: 600
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 85
+		Crushes: wall, mine, crate, infantry
+	RevealsShroud:
+		Range: 4c0
+	Transforms:
+		IntoActor: factant
+		Offset: -1,-1
+		Facing: 96
+		TransformSounds: placbldg.aud, build5.aud
+		NoTransformNotification: BuildingCannotPlaceAudio
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	BaseBuilding:
+	LeavesHusk:
+		HuskActor: MCV.Husk
+
 JEEP:
 	Inherits: ^Vehicle
 	Buildable:
@@ -745,4 +785,3 @@ STNK:
 	-MustBeDestroyed:
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
-
