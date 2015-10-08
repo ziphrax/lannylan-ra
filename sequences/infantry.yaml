@@ -358,7 +358,7 @@ medi:
 		Facings: 8
 		Tick: 100
 	icon: mediicon
-		
+
 mech:
 	stand:
 		Facings: 8
@@ -1326,6 +1326,9 @@ zombie:
 ant:
 	stand:
 		Facings: 8
+	idle:
+		Start: 1
+		Length: 1
 	stand2:
 		Start: 8
 		Length: 8
